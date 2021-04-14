@@ -13,8 +13,9 @@ class _BMIappState extends State<BMIapp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-          theme: ThemeData.dark().copyWith(
-            primaryColor:Colors.deepPurple,
+          debugShowCheckedModeBanner: false,
+          theme: ThemeData(
+            primaryColor: Colors.red,
           ),
           home: HomePage(),
     );

@@ -15,16 +15,15 @@ class BResult extends StatelessWidget {
       appBar: AppBar(
         title: Text('Result'),
       ),
-      body: Column(
-        children: [
-          Expanded(
-            flex: 4,
-            child: Container(
+      body: Container(
+        child: Column(
+          children: [
+            Container(
               height: 400,
               width: 400,
               decoration: BoxDecoration(
-                color: Colors.blueGrey,
-                borderRadius:BorderRadius.circular(20.5),
+                color:Color(0xFF1F664D),
+                borderRadius:BorderRadius.circular(0.0),
               ),
               margin: EdgeInsets.all(30.0),
               child:Column(
@@ -39,8 +38,8 @@ class BResult extends StatelessWidget {
                     height: 200,
                     width: 300,
                     decoration: BoxDecoration(
-                      color: Colors.red,
-                      borderRadius: BorderRadius.circular(30.0),
+                      color: Colors.blueAccent,
+                      borderRadius: BorderRadius.circular(0.0),
                     ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -53,18 +52,17 @@ class BResult extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(height: 20.0,),
-                  Center(
-                    child: Text(feedText,
-                      style: labelText,),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 10.0,horizontal: 30.0),
+                    child: Center(
+                      child: Text(feedText,
+                        style: labelText,),
+                    ),
                   ),
                 ],
               ),
             ),
-          ),
-          Expanded(
-            flex: 1,
-            child: GestureDetector(
+            GestureDetector(
               onTap: (){
                 Navigator.pop(context);
               },
@@ -72,17 +70,17 @@ class BResult extends StatelessWidget {
                 height: 70,
                 width: double.infinity,
                 decoration: BoxDecoration(
-                  color: Colors.deepPurple,
-                  borderRadius:BorderRadius.circular(50.5),
+                  color: Colors.red,
+                  borderRadius:BorderRadius.circular(100.0),
                 ),
                 margin: EdgeInsets.all(30.0),
                 child: Center(child: Text('Re-Calculate',style: TextStyle(
-                  fontSize: 30.0,fontWeight: FontWeight.w900,
+                  fontSize: 30.0,fontWeight: FontWeight.w900,color: Colors.white,
                 ),)),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

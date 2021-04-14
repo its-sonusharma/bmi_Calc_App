@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-const midContainerHeight = 200.0;
-const midContainerWidth = 390.0;
-const activeCardColor = Color(0xE8C264FD);
-const inactiveCardColor = Color(0xed57216a);
+const midContainerHeight = 160.0;
+const midContainerWidth = 325.0;
+const activeCardColor = Color(0xFF1F664D);
+const inactiveCardColor = Color(0xed58585f);
 
 const labelText = TextStyle(
   color: Colors.yellow,
